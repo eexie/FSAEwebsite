@@ -1,0 +1,15 @@
+{% extends "app/layout.html" %}
+<div class="layout loggedin">
+</br>
+<h2>{{ title }}.</h2>
+<h4>Update the available spots in the table</h4>
+        {% for info in Shelter_Information %}
+        <li>{{ info.id }}</li>
+        <li>{{ info.shelter_address }}</li>
+        <li>{{ info.shelter_city }}</li>
+        <li>{{ info.shelter_city }}</li>
+        <li>{{ info.spots_remaining }}</li>
+        </ul>
+        {% endfor %}
+</div>
+<h4>Log in to see this page. </h4>        
