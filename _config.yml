@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
   one of Canada's premier engineering schools, 
   is an educational engineering project undertaken by over 
   40 student members on an annual basis.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/FSAEwebsite" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: EXME_X
 github_username:  eexie
