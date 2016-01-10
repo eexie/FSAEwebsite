@@ -14,11 +14,20 @@
       </a>
 
       <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
+        {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
+        <a {% if location == 'about' %}class="page-link active" {% else %}class="page-link" {% endif %}href="/about/">ABOUT</a>
+        <a {% if location == 'cars' %}class="page-link active" {% else %}class="page-link" {% endif %}href="/about/">CARS</a>
+        <a {% if location == 'sponsors' %}class="page-link active" {% else %}class="page-link" {% endif %}href="/about/">SPONSORS</a>
+        <a {% if location == 'join' %}class="page-link active" {% else %}class="page-link" {% endif %}href="/about/">JOIN</a>
+        <a {% if location == 'contact' %}class="page-link active" {% else %}class="page-link" {% endif %}href="/about/">CONTACT</a>
+        <!-- {% for my_page in site.pages %}
+          {% if page.url != ''%}
+          {% if page.title == my_page.title %}
+          <a class="page-link active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% else %}
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
+          {% endif %}{% endif %}
+        {% endfor %} -->
       </div>
     </nav>
 

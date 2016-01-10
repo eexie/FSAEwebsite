@@ -26,7 +26,6 @@ body {
 }
 
 
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -173,7 +172,16 @@ pre {
 }
 
 
-
+/**
+ * Banner
+*/
+.banner{
+    width:100%;
+    height:300px;
+    background-color: $red-color;
+    margin-top:-$spacing-unit;
+    margin-bottom:$spacing-unit;
+}
 /**
  * Clearfix
  */
