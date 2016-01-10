@@ -1,0 +1,22 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: University of Waterloo - Formula Motorsports
+email: uwfsae@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  The Formula SAE team, representing University of Waterloo, 
+  one of Canada's premier engineering schools, 
+  is an educational engineering project undertaken by over 
+  40 student members on an annual basis.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://uwfsae.ca" # the base hostname & protocol for your site
+twitter_username: EXME_X
+github_username:  eexie
+
+# Build settings
+markdown: kramdown
